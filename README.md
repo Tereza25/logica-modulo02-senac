@@ -453,8 +453,8 @@ MDN: [class](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/C
 
 ### Bora estudar mais?
 
-[if...else](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else), [ternary](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operador_Condicional)
-[Switch Case](https://www.devmedia.com.br/javascript-switch/39761)
-[Date](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date)
-[Classes](https://www.hashtagtreinamentos.com/classes-em-javascript?gad_source=1&gclid=Cj0KCQjwwuG1BhCnARIsAFWBUC2wVXI52-Z_xaWKri56krGJmR4kER5O63J4E71byHJMdbtiClqqVjEaAh8qEALw_wcB)
-[Objetos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects)
+- [if...else](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else), [ternary](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operador_Condicional)
+- [Switch Case](https://www.devmedia.com.br/javascript-switch/39761)
+- [Date](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date)
+- [Classes](https://www.hashtagtreinamentos.com/classes-em-javascript?gad_source=1&gclid=Cj0KCQjwwuG1BhCnARIsAFWBUC2wVXI52-Z_xaWKri56krGJmR4kER5O63J4E71byHJMdbtiClqqVjEaAh8qEALw_wcB)
+- [Objetos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects)
