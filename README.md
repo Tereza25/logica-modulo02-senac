@@ -1,7 +1,7 @@
 # logica-modulo02-senac
 
-1. [Conditional if...else X Ternary operator](#conditional-if...else-x-ternary-operator)
-2. [Function X Arrow function](#function-x-arrow-function)
+1. [Conditional if...else X Ternary operator](#conditional-if-/-else)
+2. [Function X Arrow function](#function-/-arrow-function)
 3. [Função Callback](#função-callback)
 4. [Arrays](#arrays)
 5. [Objetos](#objetos)
@@ -10,7 +10,7 @@
 
 ---
 
-### Conditional if...else X Ternary operator
+### Conditional if/else
 
 Exemplo de condicional usando `if...else`:
 
@@ -35,9 +35,8 @@ const nota = 3
 MDN: [if...else](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else), [ternary](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operador_Condicional)
 
 ---
----
 
-### Function X Arrow function
+### Function/Arrow function
 
 Declarando funções:
 
