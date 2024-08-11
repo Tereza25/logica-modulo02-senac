@@ -1,7 +1,7 @@
 # logica-modulo02-senac
 
-1. [Conditional if...else X Ternary operator](#conditional-if-/-else)
-2. [Function X Arrow function](#function-/-arrow-function)
+1. [Conditional if/else](#conditional-if-/-else)
+2. [Function/Arrow function](#function-/-arrow-function)
 3. [Função Callback](#função-callback)
 4. [Arrays](#arrays)
 5. [Objetos](#objetos)
