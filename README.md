@@ -1,6 +1,10 @@
 # logica-modulo02-senac
 
-1. [Conditional if and else](#conditional-if-and-else)
+
+![javascript](https://engineering.fb.com/wp-content/uploads/2012/12/javascript-illustration.png)
+
+
+1. [Estruturas Condicionais](#estruturas-condicionais)
 2. [Function and Arrow function](#function-and-arrow-function)
 3. [Função Callback](#função-callback)
 4. [Arrays](#arrays)
@@ -10,21 +14,68 @@
 
 ---
 
-### Conditional if and else
 
-Exemplo de condicional usando `if...else`:
+### Estruturas Condicionais
 
-```js
-const nota = 3
+> Na programação utilizamos estruturas condicionais para decidir se algo deve ou não acontecer. Ou seja, para tomada de decisão.
 
-if (nota >= 7) {
-  return 'aprovado'
+- if/ else if/ else
+
+
+```
+if (condição) {
+  // se a condição for verdadeira, o código aqui dentro será executado
 } else {
-  return 'reprovado'
+  // se a primeira condição não for verdadeira, o código aqui dentro será executado
 }
 ```
 
-Exemplo de condicional usando ternário:
+````
+if (condição) {
+  // se a condição for verdadeira, o código aqui dentro será executado
+} else if (condição) {
+  // se a condição anterior não for verdadeira e a condição atual for, o código aqui dentro será executado
+} else {
+  // se as condições anteriores não forem verdadeiras, o código aqui dentro será executado
+}
+````
+
+Exemplo:
+
+Se for maior de idade pode entrar:
+```
+if (idade >= 18) {
+  console.log('pode entrar')
+}
+```
+
+Agora queremos também mandar mensagem caso não seja maior de idade:
+
+```
+if (idade >= 18) {
+  console.log('pode entrar')
+} else {
+  console.log('entrada permitida apenas para maiores de idade.')
+}
+```
+
+Agora mudamos um pouco a regra e complicamos um poco:
+- se for maior de 18 entra
+- se for mais de 18 e menor de 21 entra, mas nao pode consome bebida alcolica
+- se for maior de 21 entra e pode consome bebida alcolica.
+
+````
+if (idade >= 18 && idade < 21) {
+  console.log('pode entrar, mas não pode consumir bebidas alcolicas')
+} else if (idade >= 21) {
+  console.log('pode entrar e consumir bebidas alcolicas')
+} else {
+  console.log('entrada permitida apenas para maiores de idade.')
+}
+````
+O else if pode ser repetido quantas vezes for necessário.
+
+__Exemplo de condicional usando ternário:__
 
 ```js
 const nota = 3
@@ -32,16 +83,85 @@ const nota = 3
 (nota >= 7) ? 'aprovado' : 'reprovado'
 ```
 
-MDN: [if...else](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else), [ternary](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operador_Condicional)
+- Switch Case
+
+> A estrutura condicional switch permite executar um bloco de código diferente de acordo com cada opção (cada case) especificada. Seu uso é indicado quando os valores a serem analisados nessas condições são pré-definidos.
+
+A sintaxe da SC é:
+
+```
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
+Observe na prática:
+````
+const produto = 'mamão'
+
+switch (produto) {
+  case 'laranja':
+    console.log('laranja custa 30 centavos');
+    break;
+  case 'manga':
+  case 'mamão':
+    console.log('manga e mamão custam 2.79 reais.');
+    break;
+  default:
+    console.log('desculpe, nao temos o produto desejado');
+}
+````
 
 ---
-
 ### Function and Arrow function
 
 Declarando funções:
 
 ```js
-function falar() {
+function falar() {### Switch Case
+
+A função switch case é uma ferramenta essencial na caixa de ferramentas de qualquer programador JavaScript. Ela oferece uma maneira eficiente de lidar com múltiplas condições, evitando o uso excessivo de estruturas condicionais aninhadas. A estrutura switch case é especialmente útil quando se precisa executar diferentes blocos de código com base no valor de uma expressão.
+
+A sintaxe do Switch Case é:
+```js
+switch (expressão) {
+case valor1:
+  // bloco de código a ser executado
+  break;
+case valor2:
+  // bloco de código a ser executado
+  break;
+// mais cases...
+default:
+  // bloco de código a ser executado se nenhum case combinar
+} 
+```
+Agora observe o exemplo:
+
+```js
+const produto = 'mamão'
+
+switch (produto) {
+  case 'laranja':
+    console.log('laranja custa 30 centavos');
+    break;
+  case 'manga':
+  case 'mamão':
+    console.log('manga e mamão custam 2.79 reais.');
+    break;
+  default:
+    console.log('desculpe, nao temos o produto desejado');
+}
+```
+```js
+
   return 'Pipipi popopo'
 }
 
@@ -75,6 +195,7 @@ const calcularMedia = function(nota1, nota2, nota3) {
 ```
 
 Arrow function possui uma sintaxe mais curta, e sabemos que é uma função pelo símbolo `=>`
+
 ```js
 const falar = () => {
   return 'Pipipi popopo'
@@ -217,9 +338,10 @@ console.log(terceiro) // maçã
 ```
 
 ---
----
 
 ### Objetos
+
+> Objetos em JavaScript, assim como em muitas outras linguagens de programação, podem ser comparados com objetos na vida real. O conceito de objetos em JavaScript pode ser entendido com objetos tangíveis da vida real.
 
 Declaração de objetos
 
@@ -271,6 +393,9 @@ MDN: [destructuring assignment](https://developer.mozilla.org/pt-BR/docs/Web/Jav
 
 ### Date
 
+> Cria uma instância JavaScript de Date que representa um único momento no tempo. Objetos Date são baseados no valor de tempo que é o número de milisegundos desde 1º de Janeiro de 1970 (UTC).
+
+
 ```js
 const hoje = new Date()
 
@@ -295,6 +420,9 @@ MDN: [date](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Gl
 ---
 
 ### Classes
+
+> Uma classe em JavaScript funciona como um molde para criar objetos. Podemos definir as propriedades e os métodos que os objetos criados terão a partir dela. É como se fosse uma “planta” de construção para o objeto.
+
 
 ```js
 class Pessoa {
@@ -322,3 +450,11 @@ console.log(professora) // Pessoa { nome: 'Cintia', idade: 35, andando = true, c
 MDN: [class](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes)
 
 ---
+
+### Bora estudar mais?
+
+[if...else](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/if...else), [ternary](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Operador_Condicional)
+[Switch Case](https://www.devmedia.com.br/javascript-switch/39761)
+[Date](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date)
+[Classes](https://www.hashtagtreinamentos.com/classes-em-javascript?gad_source=1&gclid=Cj0KCQjwwuG1BhCnARIsAFWBUC2wVXI52-Z_xaWKri56krGJmR4kER5O63J4E71byHJMdbtiClqqVjEaAh8qEALw_wcB)
+[Objetos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_objects)
