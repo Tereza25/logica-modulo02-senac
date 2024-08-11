@@ -1,7 +1,7 @@
 # logica-modulo02-senac
 
-1. [Conditional if/else](#conditional-if-/-else)
-2. [Function/Arrow function](#function-/-arrow-function)
+1. [Conditional if and else](#conditional-if-and-else)
+2. [Function and Arrow function](#function-and-arrow-function)
 3. [Função Callback](#função-callback)
 4. [Arrays](#arrays)
 5. [Objetos](#objetos)
@@ -10,7 +10,7 @@
 
 ---
 
-### Conditional if/else
+### Conditional if and else
 
 Exemplo de condicional usando `if...else`:
 
@@ -36,7 +36,7 @@ MDN: [if...else](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Referen
 
 ---
 
-### Function/Arrow function
+### Function and Arrow function
 
 Declarando funções:
 
