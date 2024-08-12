@@ -80,7 +80,9 @@ __Exemplo de condicional usando ternário:__
 ```js
 const nota = 3
 
-(nota >= 7) ? 'aprovado' : 'reprovado'
+const resultado = (nota >= 7) ? 'aprovado' : 'reprovado'
+
+console.log(resultado)
 ```
 
 - Switch Case
