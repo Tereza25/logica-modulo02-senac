@@ -22,7 +22,7 @@
 - if/ else if/ else
 
 
-```
+```js
 if (condição) {
   // se a condição for verdadeira, o código aqui dentro será executado
 } else {
@@ -30,7 +30,7 @@ if (condição) {
 }
 ```
 
-````
+```js
 if (condição) {
   // se a condição for verdadeira, o código aqui dentro será executado
 } else if (condição) {
@@ -38,12 +38,12 @@ if (condição) {
 } else {
   // se as condições anteriores não forem verdadeiras, o código aqui dentro será executado
 }
-````
+```
 
 Exemplo:
 
 Se for maior de idade pode entrar:
-```
+```js
 if (idade >= 18) {
   console.log('pode entrar')
 }
@@ -51,7 +51,7 @@ if (idade >= 18) {
 
 Agora queremos também mandar mensagem caso não seja maior de idade:
 
-```
+```js
 if (idade >= 18) {
   console.log('pode entrar')
 } else {
@@ -64,7 +64,7 @@ Agora mudamos um pouco a regra e complicamos um poco:
 - se for mais de 18 e menor de 21 entra, mas nao pode consome bebida alcolica
 - se for maior de 21 entra e pode consome bebida alcolica.
 
-````
+```js
 if (idade >= 18 && idade < 21) {
   console.log('pode entrar, mas não pode consumir bebidas alcolicas')
 } else if (idade >= 21) {
@@ -72,7 +72,7 @@ if (idade >= 18 && idade < 21) {
 } else {
   console.log('entrada permitida apenas para maiores de idade.')
 }
-````
+```
 O else if pode ser repetido quantas vezes for necessário.
 
 __Exemplo de condicional usando ternário:__
@@ -87,11 +87,11 @@ console.log(resultado)
 
 - Switch Case
 
-> A estrutura condicional switch permite executar um bloco de código diferente de acordo com cada opção (cada case) especificada. Seu uso é indicado quando os valores a serem analisados nessas condições são pré-definidos.
+> A estrutura condicional switch é uma função que permite executar um bloco de código diferente de acordo com cada opção (cada case) especificada. Seu uso é indicado quando os valores a serem analisados nessas condições são pré-definidos.
 
 A sintaxe da SC é:
 
-```
+```js
 switch(expression) {
   case x:
     // code block
@@ -105,7 +105,7 @@ switch(expression) {
 ```
 
 Observe na prática:
-````
+```js
 const produto = 'mamão'
 
 switch (produto) {
@@ -121,47 +121,9 @@ switch (produto) {
 }
 ````
 
----
-### Function and Arrow function
+### Function X Arrow function
 
 Declarando funções:
-
-```js
-function falar() {### Switch Case
-
-A função switch case é uma ferramenta essencial na caixa de ferramentas de qualquer programador JavaScript. Ela oferece uma maneira eficiente de lidar com múltiplas condições, evitando o uso excessivo de estruturas condicionais aninhadas. A estrutura switch case é especialmente útil quando se precisa executar diferentes blocos de código com base no valor de uma expressão.
-
-A sintaxe do Switch Case é:
-```js
-switch (expressão) {
-case valor1:
-  // bloco de código a ser executado
-  break;
-case valor2:
-  // bloco de código a ser executado
-  break;
-// mais cases...
-default:
-  // bloco de código a ser executado se nenhum case combinar
-} 
-```
-Agora observe o exemplo:
-
-```js
-const produto = 'mamão'
-
-switch (produto) {
-  case 'laranja':
-    console.log('laranja custa 30 centavos');
-    break;
-  case 'manga':
-  case 'mamão':
-    console.log('manga e mamão custam 2.79 reais.');
-    break;
-  default:
-    console.log('desculpe, nao temos o produto desejado');
-}
-```
 ```js
 
   return 'Pipipi popopo'
@@ -200,18 +162,25 @@ Arrow function possui uma sintaxe mais curta, e sabemos que é uma função pelo
 
 ```js
 const falar = () => {
-  return 'Pipipi popopo'
-}
+  return 'Vamos conversar?'
+};
+
+console.log(falar);
+
 
 const dobro = (num) => {
   return num * 2
-}
+};
+
+console.log(dobro);
 
 const calcularMedia = (nota1, nota2, nota3) => {
   const soma = (nota1 + nota2 + nota3)
   const media = soma / 3
   return media
-}
+};
+
+console.log(dobro);
 ```
 
 Conseguimos deixar a função ainda mais concisa, pois:
@@ -219,7 +188,7 @@ Conseguimos deixar a função ainda mais concisa, pois:
 - e ao remover as chaves `{}`, o `return` é implícito e, portanto, também removemos:
 
   ```js
-  const falar = () => 'Pipipi popopo'
+  const falar = () => 'Vamos conversar?'
 
   const dobro = num => num * 2
   ```
